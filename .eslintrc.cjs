@@ -32,6 +32,7 @@ module.exports = {
         "vue/html-self-closing": 0,
         "vue/multi-word-component-names": 0,
         "vue/attributes-order": 0,
-        "vue/html-closing-bracket-newline": 0
+        "vue/html-closing-bracket-newline": 0,
+        "vue/attribute-hyphenation": 0
     }
 }
