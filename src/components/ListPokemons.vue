@@ -30,9 +30,9 @@ const pokemon = defineProps(["name", "urlBaseSvg"])
 .cardListPokemon:hover{
     background: rgb(2,0,36);
     background: radial-gradient(circle, 
-                rgba(2,0,36,0.8) 0%,
-                rgba(0,212,255,0.8) 0%,
-                rgba(44,69,196,0.9) 100%);
+                rgba(2,0,36,0.9) 0%,
+                rgba(0,212,255,0.9) 0%,
+                rgba(44,69,196,1.0) 100%);
 }
 .cardListPokemon img:hover{
   padding: .1rem;
