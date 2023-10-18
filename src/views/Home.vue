@@ -42,21 +42,21 @@ const selectPokemon = async (pokemon) => {
 <template>
   <main>
     <div class="container text-center">
-      <div class="row mt-4">
-        <div class="col-sm-12 col-md-6">
+      <div class="BoxContainer">
+        <div class="Box">
           <cardPokemonSelected 
             :name="pokemonSelected?.name"
             :xp="pokemonSelected?.base_experience"
             :height="pokemonSelected?.height"
             :img="pokemonSelected?.sprites.other.dream_world.front_default"
             :loading="loading"
-            class="text-uppercase"
+            class="Box1"
           />
         </div>
-        <div class="col-sm-12 col-md-6">
-          <div class="card card-list backList">
-            <div class="card-body row">
-              <div class="mb-3">
+        <div class="Box">
+          <div class="">
+            <div class="Box2">
+              <div class="">
                 <label 
                   hidden 
                   for="searchPokemonField" 
@@ -78,7 +78,7 @@ const selectPokemon = async (pokemon) => {
                 :name="pokemon.name"
                 :urlBaseSvg="urlBaseSvg + pokemon.url.split('/')[6] + '.svg'" 
                 @click="selectPokemon(pokemon)"
-                class="text-uppercase"
+                class="GrupoPokemon"
               />
             </div>
           </div>
@@ -89,7 +89,32 @@ const selectPokemon = async (pokemon) => {
 </template>
 
 <style scoped>
-.backList{
+
+
+.BoxContainer{
+  display: flex;
+}
+.GrupoPokemon{
+  float: left;  
+}
+
+.Box{
+  flex: 1;
+  margin: 20px 5px 5px 5px;
+  height: 85vh; 
+  background-color: red;
+}
+
+.Box1{
+  max-height: 1500px;
+}
+.Box2{
+  overflow-y: scroll;
+  overflow-x: hidden;
+  max-height: 85vh;
+}
+
+/*.backList{
   background: rgb(2,0,36);
   background: radial-gradient(circle, 
               rgba(2,0,36,0.7) 0%,
@@ -100,5 +125,5 @@ const selectPokemon = async (pokemon) => {
 overflow-y: scroll;
 overflow-x: hidden;
 max-height: 690px;
-}
+}*/
 </style>

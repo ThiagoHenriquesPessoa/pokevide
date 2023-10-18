@@ -6,7 +6,7 @@ const pokemon = defineProps(["name", "urlBaseSvg"])
 
 <template>
   <div class="col-4">
-    <div class="card p-2 mb-3 cardListPokemon">
+    <div class="card p-2 cardListPokemon">
       <p class="text-center"> 
         {{ pokemon.name }}
       </p>
@@ -26,6 +26,7 @@ const pokemon = defineProps(["name", "urlBaseSvg"])
                 rgba(0,212,255,0.7) 0%,
                 rgba(44,69,196,0.8) 100%);
     cursor: pointer;
+    margin: 5px;
 }
 .cardListPokemon:hover{
     background: rgb(2,0,36);

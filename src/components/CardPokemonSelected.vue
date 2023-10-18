@@ -23,7 +23,7 @@ const pokemon = defineProps([ "name", "xp", "height", "img", "loading" ])
     >
 
     <h1>
-      {{ pokemon?.name || "???"}}
+      {{ pokemon?.name || "???" }}
     </h1>
     <div class="card-body">
       <hr>
